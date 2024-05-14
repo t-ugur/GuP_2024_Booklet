@@ -1,0 +1,105 @@
+%======================================================
+% This file is part of
+% "AMCOS_booklet"
+% Version 1.1 (04/07/2019)
+% A LaTeX template for conference books of abstracts
+%
+% This template is available at:
+% https://github.com/maximelucas/AMCOS_booklet
+%
+% License: GNU General Public License v3.0
+%
+% Authors:
+% Maxime Lucas (ml.maximelucas@gmail.com)
+% Pau Clusella
+%=======================================================
+
+\documentclass[openany, parskip=full, 12pt, a4]{scrbook}
+
+\input{tex/preamble.tex}
+\input{tex/preamble_booklet.tex}
+
+
+\usepackage{enumitem}
+\setlist[description]{itemsep=-1ex, topsep=0.2pt}
+
+	
+\begin{document}
+
+
+% COVER PAGE
+%--------------------------------------------------------------------
+% \includepdf{pdf_static/cover.pdf}	% our cover was produced with canva.com
+
+	
+	
+% GENERAL INFORMATION
+%---------------------------------------------------------------------
+% \input{tex/general_infos.tex}
+
+
+% SPONSORS
+%------------------------------------------------------------------
+\chapter{Sponsors}
+\input{tex/logos.tex}
+
+
+% Welcome
+%---------------------------------------------------------------------
+\chapter{Welcome to Hamburg}
+% \input{tex/welcome.tex}
+
+
+% TABLE OF CONTENTS 
+%---------------------------------------------------------------------
+\tableofcontents
+
+
+% USEFUL INFO
+%------------------------------------------------------------------
+\chapter{Useful Information}
+% \input{tex/useful_info.tex}
+
+
+% TIMETABLE 
+%---------------------------------------------------------------------
+\chapter{Timetable}
+% \input{tex/timetable.tex}
+
+
+% Definitions of custom environment used here can be found in preamble_booklet.tex file
+
+% The following input commands automatically select the right version 
+% (print or online) version of the abstract's .tex
+% \type is defined in preamble_booklet.tex and equals:
+% 'o' (online) or 'p' (print)
+
+
+%Thursday
+%---------------------------------------------------------------------
+\chapter{Thursday | 30. May 2024}
+\input{tex/days/thursday/thursday.tex}
+
+
+
+%Friday
+%---------------------------------------------------------------------
+\chapter{Friday | 31. May 2024}
+% \input{tex/days/friday/friday.tex}
+
+
+%Saturday
+%---------------------------------------------------------------------
+\chapter{Saturday | 01. June 2024}
+% \input{tex/days/saturday/saturday.tex}
+
+
+% BACK PAGE
+%-----------------------------------------------------------------
+
+\newpage
+\pagecolor{myblue}
+\thispagestyle{empty}
+\mbox{}
+
+\end{document}
