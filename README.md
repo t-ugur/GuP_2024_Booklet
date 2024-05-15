@@ -1,1 +1,1 @@
-# GuP 2024 Booklet
+# PuG 2024 Booklet
