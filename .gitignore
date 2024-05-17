@@ -1,4 +1,7 @@
 *~*
+*.DS_Store
+*dekstop.ini
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
